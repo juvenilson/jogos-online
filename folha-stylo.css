@@ -1,7 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+main{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "article article article"
+    "footer footer footer";
+    grid-template-rows: 100px calc(100vh - 200px) 100px;
+
+}
+
+header{
+    grid-area: header;
+    background-color: red;
+}
+article{
+    grid-area: article;
+    background-color: blue;
+}
+footer{
+    grid-area: footer;
+    background-color: green;
+}
 .primeira{
     background-color: azure;
     font-size: medium;
-    font-family: Verdana;
+    font-fa
     font-style: oblique;
 }
 
